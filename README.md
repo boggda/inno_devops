@@ -2,6 +2,8 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
+![python_app](https://github.com/boggda/inno_devops/actions/workflows/python_ci.yaml/badge.svg)
+
 This is a simple web application that shows the current time in Moscow.
 
 ## Usage
@@ -79,4 +81,17 @@ This simple web application was implemented using the FastAPI framework due to i
 The application receives data from ```https://timeapi.io/api/Time/current/zone?timeZone=Europe/Moscow```. This API makes it easy to get the time for any time zone.
 
 You get application documentation by accessing the ```/docs``` endpoint.
+
+## Unit Tests
+
+1) Install dependencies.
+2) Run unit tests:
+    ```
+    cd app_python && pytest moscow_time
+    ```
+
+## Author
+
+Bogdan Kondratev
+
 
